@@ -1,13 +1,13 @@
-import Animal from "./Animal.js"
+import Animales from "./Animales.js"
 
 // Clase hija
-class Aguila extends Animal {
-  constructor(nombre, edad, img, comentarios, sonido) {
-    super(nombre, edad, img, comentarios, sonido)
-  }
-  chillar() {
-    console.log(this.sonido)
-  }
+class Aguila extends Animales{
+    constructor(nombre, edad, img, comentarios, sonido) {
+        super(nombre, edad, img, comentarios, sonido)
+    }
+    chillar() {
+        console.log(this.sonido)
+    }
 }
 
-export { Aguila }
+export default Aguila
